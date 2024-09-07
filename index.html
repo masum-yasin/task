@@ -5,144 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-      body{
-        background-color: black;
-      }
-      .navbar-brand>img{
-        background-color:rgba(0, 0, 0, 0.935);
-        height:70px;
-        width:120px;
-      
-        
-      }
-      .form-button{
-        padding: 0px 120px 0px 0px;
-      }
-      .under-nav-heading{
-        font-size:65px;
-        color: #fff;
-        text-align: center;
-        margin-top:120px;
-      }
-      .under-nav-paragraph{
-        color:#fff;
-        text-align: center;
-        font-size: 25px;
-      }
-      .start-free{
-        width:200px;
-        font-size: 20px;
-      }
-      .learn-more{
-        width: 170px;
-        font-size: 20px;
-      }
-      .main-nav{
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      .nav-link {
-        font-size:20px;
-      }
-      .singin{
-        font-size: 20px;
-      }
-      .singup{
-        font-size: 20px;
-      }
-      .image-video{
-        text-align: center;
-        margin-top: 80px;
-    
-      }
-      .secure-heading{
-        font-size:45px;
-        color: #fff;
-        text-align: center;
-        margin-top:120px;
-      }
-     .icon{
-      font-size:55px;
-      font-weight: bold;
-      
-     }
-     .icon-text{
-
-     }
-   
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark main-nav">
-    <div class="container-fluid">
-      <a class="navbar-brand ps-5" href="#"><img  src="image/UAV Sync White.png" alt=""  ></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex gap-3 form-button">
-          
-          <button class="btn btn-dark text-primary singin" type="submit">Signin</button>
-          <button class="btn btn-primary signup" type="submit">Signup</button>
-        </form>
+    <nav class="navbar navbar-expand-lg main-nav">
+      <div class="container">
+        <a class="navbar-brand ps-5" href="#"><img  src="image/UAV Sync White.png" alt=""  ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex gap-3 form-button">
+            
+            <button class="btn btn-dark text-primary singin" type="submit">Signin</button>
+            <button class="btn btn-primary signup" type="submit">Signup</button>
+          </form>
+        </div>
       </div>
+    </nav>
+
+    <main class="container">
+      <section>
+        <h1 class="under-nav-heading">Secure Peer-to-Peer UAV <br> Communication</h1>
+        <p class="under-nav-paragraph">Next-gen, encrypted communication for UAV fleets and ground control systems.</p>
+       <div class="d-flex justify-content-center gap-3">
+        <button class="start-free btn-primary p-3">Start free trial</button>
+        <button class="learn-more bg-dark text-white p-3">Learn more</button>
+       </div>
+      
+       <div class="image-video">
+        <img src="image/hero-image-01 (1).webp" alt="">
+       </div>
+      </section>
+      
+      <section>
+        <h1 class="secure-heading">Secure Peer-to-Peer UAV <br> Communication.</h1>
+        <p class="under-nav-paragraph">Next-gen, encrypted communication for UAV fleets and ground control systems.</p>
+       <div class="d-flex justify-content-center align-items-center gap-5">
+        <div>
+          <div class="icon text-primary text-center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M144.1 179.2C173.8 127.7 228.6 96 288 96s114.2 31.7 143.9 83.2L540.4 368c12.3 21.3-3.1 48-27.7 48H63.3c-24.6 0-40-26.6-27.7-48L144.1 179.2z"></path></svg></div>
+        <h2 class="icon-heading text-white text-center">Our Mission</h1>
+          <p class="multi-text fs-5 text-center">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
+         </div>
+        <div>
+          <div class="icon text-primary text-center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.384.248A.422.422 0 0 0 11.998 0a.427.427 0 0 0-.387.248L6.172 12.002l5.441 11.752a.428.428 0 0 0 .616.18.428.428 0 0 0 .157-.18l5.443-11.752L12.384.248Zm-.386 18.449-3.101-6.695 3.101-6.697 3.1 6.697-3.1 6.695Z"></path></svg></div>
+          
+        <h2 class="icon-heading text-white text-center">Our Vision</h1>
+          <p class="multi-text fs-5 text-center">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
+         </div>
+        <div>
+          
+      
+          <div class="icon text-primary text-center"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.877075 7.49988C0.877075 3.84219 3.84222 0.877045 7.49991 0.877045C11.1576 0.877045 14.1227 3.84219 14.1227 7.49988C14.1227 11.1575 11.1576 14.1227 7.49991 14.1227C3.84222 14.1227 0.877075 11.1575 0.877075 7.49988ZM7.49991 1.82704C4.36689 1.82704 1.82708 4.36686 1.82708 7.49988C1.82708 10.6329 4.36689 13.1727 7.49991 13.1727C10.6329 13.1727 13.1727 10.6329 13.1727 7.49988C13.1727 4.36686 10.6329 1.82704 7.49991 1.82704Z" fill="currentColor"></path></svg></div>
+        <h2 class="icon-heading text-white text-center">Our Vision</h1>
+          <p class="multi-text fs-5">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
+         </div>
+       </div>
+      </section>
+      
+      <section>
+       <div class="revolutionizing">
+        <button class="revolutionize-button">Revolutionizing UAV Communication</button>
+       </div>
+       <h1 class="one-product mt-2">One product, unlimited solutions</h1>
+       <p class="under-nav-paragraph mt-2">Reliable, Secure, and Efficient Data Transmission for UAV Networks" Overview<br> Section</p>
+      </section>
+      
+      <section>
+       
+    
+         
+    
+        <div class="d-flex justify-content-center align-items-center gap-5 mt-5">
+          <div>
+            <h5 class="fst-italic text-primary">More speed. Less spend</h5>
+            <h1 class="peer">Peer-to-Peer Communication</h1>
+            <p class="multi-text mt-2 fs-5">Direct communication between<br> UAVs and between UAVs  and GCSs without <br> a central server. Enabling seamless operations even in isolated<br> environments.</p>
+
+
+            <div class="d-flex gap-3">
+              <div>
+                <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+              </div>
+              <div>
+                <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+          
+            </div>
+          
+          </div>
+          <div class="d-flex gap-3">
+        
+              <div>
+                <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+              </div>
+              <div>
+                <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+          
+            </div>
+          
+          </div>
+          <div class="d-flex gap-3">
+        
+              <div>
+                <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+              </div>
+              <div>
+                <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+          
+            </div>
+          
+          </div>
+
+
+
+           </div>
+  
+            <div>
+              <img src="image/round-full.png" alt="">
+            </div>
+        </div>
+   
+      </section>
+
+      <section>
+
+
+
+     <div class="cyber-security">
+      <div>
+        <img src="image/cyber-security-3400657_1280.webp" alt="">
+      </div>
+
+      <div>
+        <h5 class="fst-italic text-primary">More speed. Less spend</h5>
+      <h1 class="peer">Peer-to-Peer Communication</h1>
+      <p class="multi-text mt-2 fs-5">Direct communication between<br> UAVs and between UAVs  and GCSs without <br> a central server. Enabling seamless operations even in isolated<br> environments.</p>
+
+      <div class="d-flex gap-3">
+        <div>
+          <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+        </div>
+        <div>
+          <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+    
+      </div>
+    
     </div>
-  </nav>
-<section>
-  <h1 class="under-nav-heading">Secure Peer-to-Peer UAV <br> Communication</h1>
-  <p class="under-nav-paragraph">Next-gen, encrypted communication for UAV fleets and ground control systems.</p>
- <div class="d-flex justify-content-center gap-3">
-  <button class="start-free btn-primary p-3">Start free trial</button>
-  <button class="learn-more bg-dark text-white p-3">Learn more</button>
- </div>
-
- <div class="image-video">
-  <img src="image/hero-image-01 (1).webp" alt="">
- </div>
-</section>
-
-<section>
-  <h1 class="secure-heading">Secure Peer-to-Peer UAV <br> Communication.</h1>
-  <p class="under-nav-paragraph">Next-gen, encrypted communication for UAV fleets and ground control systems.</p>
- <div class="d-flex justify-content-center align-items-center gap-5">
-  <div>
-    <div class="icon text-primary text-center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M144.1 179.2C173.8 127.7 228.6 96 288 96s114.2 31.7 143.9 83.2L540.4 368c12.3 21.3-3.1 48-27.7 48H63.3c-24.6 0-40-26.6-27.7-48L144.1 179.2z"></path></svg></div>
-  <h2 class="icon-heading text-white text-center">Our Mission</h1>
-    <p class="text-white fs-5 text-center">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
-   </div>
-  <div>
-    <div class="icon text-primary text-center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.384.248A.422.422 0 0 0 11.998 0a.427.427 0 0 0-.387.248L6.172 12.002l5.441 11.752a.428.428 0 0 0 .616.18.428.428 0 0 0 .157-.18l5.443-11.752L12.384.248Zm-.386 18.449-3.101-6.695 3.101-6.697 3.1 6.697-3.1 6.695Z"></path></svg></div>
+    <div class="d-flex gap-3">
+  
+        <div>
+          <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+        </div>
+        <div>
+          <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
     
-  <h2 class="icon-heading text-white text-center">Our Vision</h1>
-    <p class="text-white fs-5 text-center">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
-   </div>
-  <div>
+      </div>
     
+    </div>
+    <div class="d-flex gap-3">
+  
+        <div>
+          <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+        </div>
+        <div>
+          <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+    
+      </div>
+    
+    </div>
 
-    <div class="icon text-primary text-center"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.877075 7.49988C0.877075 3.84219 3.84222 0.877045 7.49991 0.877045C11.1576 0.877045 14.1227 3.84219 14.1227 7.49988C14.1227 11.1575 11.1576 14.1227 7.49991 14.1227C3.84222 14.1227 0.877075 11.1575 0.877075 7.49988ZM7.49991 1.82704C4.36689 1.82704 1.82708 4.36686 1.82708 7.49988C1.82708 10.6329 4.36689 13.1727 7.49991 13.1727C10.6329 13.1727 13.1727 10.6329 13.1727 7.49988C13.1727 4.36686 10.6329 1.82704 7.49991 1.82704Z" fill="currentColor"></path></svg></div>
-  <h2 class="icon-heading text-white text-center">Our Vision</h1>
-    <p class="text-white fs-5">Our mission is to revolutionize the way <br> Unmanned Aerial Vehicles (UAVs) and <br>Ground Control Systems (GCS) <br>communicate by delivering a robust,<br> secure, and efficient communication <br> framework. We are committed to <br> advancing the capabilities of UAV <br> fleets by leveraging innovative <br> encryption technologies and <br> decentralized P2P protocols to create <br> a seamless and secure network.</p>
-   </div>
- </div>
-</section>
+
+      
+      </div>
+     </div>
+      </section>
+
+      <section>
+
+
+
+        <div class="cyber-security">
+          <div>
+            <h5 class="fst-italic text-primary">More speed. Less spend</h5>
+          <h1 class="peer">Peer-to-Peer Communication</h1>
+          <p class="multi-text mt-2 fs-5">Direct communication between<br> UAVs and between UAVs  and GCSs without <br> a central server. Enabling seamless operations even in isolated<br> environments.</p>
+    
+          <div class="d-flex gap-3">
+            <div>
+              <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+            </div>
+            <div>
+              <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+        
+          </div>
+        
+        </div>
+        <div class="d-flex gap-3">
+      
+            <div>
+              <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+            </div>
+            <div>
+              <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+        
+          </div>
+        
+        </div>
+        <div class="d-flex gap-3">
+      
+            <div>
+              <li class="checkbox  items-center mb-2"><svg class="svg-style mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path></svg>
+            </div>
+            <div>
+              <span class="multi-text">Duis aute irure dolor in reprehenderit</span></li>
+        
+          </div>
+        
+        </div>
+    
+    
+          
+          </div>
+         <div>
+           <img src="image/frequency-wave-7776034_1280.webp" alt="">
+         </div>
+   
+       
+        </div>
+         </section>
+
+         <section>
+          <div class="loop-section">
+           <div>
+            <h1>Stay in the loop</h1>
+            <p>Join our newsletter to get top news before anyone else.</p>
+           </div>
+           <div>
+            <div>
+              <input class="p-2 bg-primary" type="text" placeholder="Your best email">
+              <button class="p-2">Subcribe</button>
+            </div>
+           </div>
+          </div>
+         </section>
+
+        <footer>
+         <div class="footer-section">
+          <div>
+            <img  src="image/UAV Sync White.png" alt="" width="150px">
+            <p class="footer_paragraph">We are at the forefront of UAV communication technology,<br> developing  secure, decentralized solutions that enhance <br> the reliability and scalability of drone networks. Our proprietary technology ensures that your UAV fleets can operate seamlessly, securely, and autonomously in any environment.</p>
+          </div>
+          <div class="product">
+            <h5>Products</h5>
+            <p>Web Studio
+              DynamicBox Flex
+              Programming Forms</p>
+          </div>
+          <div class="resources">
+            <h5>Resources</h5>
+            <p>Nostrud exercitation
+              Visual mockups
+              Nostrud exercitation
+              Visual mockups
+              Nostrud exercitation</p>
+          </div>
+          <div class="company">
+            <h5>Company</h5>
+            <p>Consectetur adipiscing
+              Labore et dolore
+              Consectetur adipiscing
+              Labore et dolore
+              Consectetur adipiscing</p>
+          </div>
+         </div>
+        </footer>
+    </main>
+  
+
   
 </body>
 </html>
