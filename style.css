@@ -157,32 +157,7 @@
     margin-top: 50px;
   }
    
-/* Custom media query for small devices */
-@media (max-width: 768px) {
-  .icon-heading {
-      font-size: 1.2rem; /* Adjust font size for mobile */
-  }
-  .multi-text {
-      font-size: 1rem; /* Adjust text size */
-      line-height: 1.4; /* Improve readability */
-  }
-  .form-button {
-      flex-direction: column; /* Stack form buttons vertically */
-  }
-  .loop-section {
-      flex-direction: column; /* Stack content vertically */
-  }
-}
 
-/* Adjust spacing for smaller screens */
-@media (max-width: 576px) {
-  .navbar-nav {
-      text-align: center; /* Center nav items on mobile */
-  }
-  .secure-heading {
-      font-size: 1.5rem; /* Adjust headings */
-  }
-  .footer_paragraph {
-      padding: 10px; /* Adjust footer spacing */
-  }
+@media (max-width: 768px) {
+  
 }
